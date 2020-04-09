@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 545px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<div style="background-color:#666"><h1 style="color:white"><center>Tamil Nadu Covid-19 Web GIS</h1></div>
+
+<div class="row">
+  <div class="column" style="background-color:#666;">
+    <p align="center"><iframe width="520" height="500" src="https://leostalin.github.io/Covid19/#7/10.833/78.290" frameborder="0"></iframe></p>
+  </div>
+  <div class="column" style="background-color:#666;">
+    <p align="center"><iframe width="520" height="240" src="https://live.amcharts.com/ZkZDI/embed/" frameborder="0"></iframe></p>
+    <p align="center"><iframe width="520" height="240" src="https://live.amcharts.com/k5OTl/embed/" frameborder="0"></iframe></p>
+  </div>
+</div>
+
+</body>
+</html>
